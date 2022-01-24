@@ -1,0 +1,12 @@
+node_modules
+log
+dist
+gitIgnore
+dist-ssr
+*.local
+.idea
+svn_moon-1
+.vscode
+build-test
+build-staging
+build-release
