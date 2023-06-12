@@ -1,0 +1,30 @@
+/* 样式变量覆盖 */
+:root {
+    /* --vp-home-hero-name-color: blue; */
+    --vp-c-brand: #646cff;
+    --vp-c-brand-light: #646cff;
+    --vp-c-brand-lighter: #646cff;
+    --vp-c-brand-dark: #646cff;
+    --vp-c-brand-darker: #646cff;
+}
+/* stylelint-disable-next-line selector-class-pattern */
+.VPImage.image-src {
+    max-width: 100%;
+}
+
+.image .image-container {
+    transform: none;
+}
+/* stylelint-disable-next-line selector-class-pattern */
+.VPButton {
+    border-radius: 4px !important;
+    padding: 0 15px !important;
+}
+
+.vp-doc tr:nth-child(2n) {
+    background: none;
+}
+
+.vp-doc table {
+    display: table;
+}

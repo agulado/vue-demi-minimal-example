@@ -1,0 +1,33 @@
+pipeline {
+    tools { nodejs 'nodejs 16.4.0' }
+    agent any
+    stages {
+        stage('prepare') {
+            steps {
+                sh 'printenv'
+            }
+        }
+        stage('Install') {
+            steps {
+                sh 'node -v'
+                sh 'npm install --verbose --canvas_binary_host_mirror=https://registry.npmmirror.com/-/binary/canvas/'
+            }
+        }
+        stage('Build') {
+            steps {
+                sh 'npm run docs:build'
+            }
+        }
+        // stage('Deploy') {
+        //     steps {
+        //         echo 'deploy'
+        //         sh 'cp -rf ./doc_dist/. /data/workspace/www/element.17zuoye.net/blibs_t'
+        //     }
+        // }
+    }
+    post {
+        always {
+            deleteDir()
+        }
+    }
+}
