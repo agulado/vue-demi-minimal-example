@@ -8,10 +8,6 @@
     "start": "vitepress dev docs --port 8077",
     "build": "vitepress build docs --debug"
   },
-  "repository": {
-    "type": "git",
-    "url": "ssh://git@gitlab.17zuoye.net:10022/saas-platform/moon5.git"
-  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
