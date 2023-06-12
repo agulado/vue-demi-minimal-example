@@ -21,7 +21,7 @@ pipeline {
         // stage('Deploy') {
         //     steps {
         //         echo 'deploy'
-        //         sh 'cp -rf ./doc_dist/. /data/workspace/www/element.17zuoye.net/blibs_t'
+        //         sh 'cp -rf ./doc_dist/. /data/workspace/www/
         //     }
         // }
     }
